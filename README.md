@@ -16,6 +16,11 @@ HashGraph (Hedera)
 
 [TR: What is it &amp; How to Write it?](https://blog.bit.ai/technical-report/)
 
+##### rust
+
+[concurrency](https://blog.rust-lang.org/2015/04/10/Fearless-Concurrency.html)
+
+
 ## Notes
 
 Below is the list of the best known algos.

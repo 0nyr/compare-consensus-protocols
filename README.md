@@ -8,9 +8,6 @@ DAG - tamgle (IOTA) -> dag de block, problème de rool back..
 
 HashGraph (Hedera)
 
-
-
-
 ##### tools
 
 [bibliography manager | bibguru](https://github.com/0nyr/compare-consensus-protocols) ⭐️
@@ -38,15 +35,10 @@ Below is the list of the best known algos.
 
 
 
-## History
+## TODOs
 
-### Wed 2 March 2022
+#### intro
 
-Trying to understand what to do. Created the repository and initial LaTeX code. Got *Bitcoin white paper*, and *Blockchain Consensus: An Overview of Alternative Protocols*.
-
-
-### TODOs
-
-* [ ] Understand how to make a sheme
-* [ ] Read *Bitcoin white paper* Proof-of-work section and make a summary.
-* [ ] Read *Blockchain Consensus: An Overview of Alternative Protocols*
+* [ ] what is a consensus algoritm role, what is it used for. Recall the importance of Bitcoin Proof-of-work, the need for "better" versions, the trade-offs that usualy need to be made...
+* [ ] Recall the different types of blockchain, the usual chain and the other forms it can have.
+* [ ] Shows the impact the type of blockchain and the problem it rises on consensus.

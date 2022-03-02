@@ -1,17 +1,18 @@
-\documentclass[12pt]{article} %text width
-\usepackage[utf8]{inputenc} %encode text to utf8
+\documentclass[12pt]{article} % text width
+\usepackage[utf8]{inputenc} % encode text to utf8
 
 \usepackage[english]{babel}
 \usepackage[a4paper]{geometry}
 
 % quotes and bibliography
+\usepackage{dirtytalk}
 \usepackage{csquotes}
 \usepackage[
 backend=biber,
 style=numeric,
 sorting=ynt
 ]{biblatex}
-\addbibresource{biblio.bib}
+\addbibresource{biblio.bib} % bibliography
 
 \title{Comparison of consensus algorithms for blockchain applications}
 \author{Florian Rascoussier \thanks{funded by the Overleaf team}}
@@ -19,6 +20,10 @@ sorting=ynt
 
 % document content
 \begin{document}
+
+\input{title.tex}
+\newpage
+
 \input{cover.tex}
 \newpage
 
@@ -27,6 +32,17 @@ sorting=ynt
 State of the art overview of the different consensus 
 algorithms used by blockchains / cryptocurrencies.
 
+Since the introduction of the Bitcoin protocol and its 
+\say{Proof of Work} \cite{Nakamoto2009-uw}, consensus algorithms have 
+seen a rapid development and diversification.
+
+\section{}
 
 
+
+
+
+\input{biblio.tex}
+
+\restoregeometry
 \end{document}

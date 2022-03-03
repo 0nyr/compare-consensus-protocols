@@ -1,7 +1,7 @@
 \documentclass[12pt]{article} % text width
 \usepackage[utf8]{inputenc} % encode text to utf8
 
-\usepackage[english]{babel}
+\usepackage[english]{babel} % text correction
 \usepackage[a4paper]{geometry}
 
 % quotes and bibliography
@@ -17,6 +17,14 @@ sorting=ynt
 \title{Comparison of consensus algorithms for blockchain applications}
 \author{Florian Rascoussier \thanks{funded by the Overleaf team}}
 \date{March 2022}
+
+\pagenumbering{roman} % set page numbering of front matter sections
+
+% use acronyms and glossaries
+% toc: add glossary to table of contents
+\usepackage[colorlinks]{hyperref}
+\usepackage[acronym, toc]{glossaries} 
+\input{glossaries.tex} % acronyms definitions
 
 % document content
 \begin{document}
@@ -41,14 +49,36 @@ Special thanks to the supervisors of this PhD Track project, namely:
     \item Omar Hasan
 \end{itemize}
 
+\section{Foreword}
+This report will be using abbreviations and acronyms, especially for the following:
+\begin{itemize}
+    \item consensus algorithms
+    \item consensus protocols
+    \item other algorithms
+\end{itemize}
+When possible, they will be defined in the text between parenthesis right after 
+the first occurrence of the word or expression. Each of these abbreviations will 
+be available in the 
+
 \newpage
 \tableofcontents
 
 \newpage
+\pagenumbering{arabic} % reset page numbering
+
 \section{Introduction}
 Since the introduction of the Bitcoin protocol and its 
-\say{Proof of Work} \cite{Nakamoto2009-uw}, consensus algorithms have 
+\say{\acrlong{PoW}} \cite{Nakamoto2009-uw}, consensus algorithms have 
 seen a rapid development and diversification. 
+
+Another now well-known consensus algorithm is the \acrlong{PoS}, which
+was first introduced in...
+
+\subsection{Context of the report}
+This report has been written in the context of a Phd-Track project. This
+is a Double-Degree program between INSA Lyon and Universität Passau. This 
+Double-Degree is heavily research oriented. It is intended to prepare 
+students to research and is a first step towards a PhD-Degree.
 
 \subsection{Consensus Algorithms}
 
@@ -59,16 +89,18 @@ seen a rapid development and diversification.
 
 \section{Conclusion}
 
+\newpage
 \section{Appendices}
+
+% glossary and acronyms
+\printglossary[type=\acronymtype]
+\printglossary
 
 
 \newpage
-\section{Bibliography and References}
-
-\subsection{References}
 \input{biblio.tex}
 
-\subsection{Bibliography}
+\subsection{Bibliography} % to be removed
 
 
 \restoregeometry

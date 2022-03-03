@@ -11,3 +11,12 @@
 *.fdb_latexmk
 *.out
 *.toc
+*.glo
+*.ist
+*.acn
+*.acr
+*.alg
+*.dvi
+*.glg
+*.gls
+*.ilg

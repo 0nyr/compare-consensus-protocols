@@ -4,10 +4,6 @@
 
 ### Useful links
 
-DAG - tamgle (IOTA) -> dag de block, problème de rool back..
-
-HashGraph (Hedera)
-
 ##### tools
 
 [bibliography manager | bibguru](https://github.com/0nyr/compare-consensus-protocols) ⭐️
@@ -16,10 +12,15 @@ HashGraph (Hedera)
 
 [TR: What is it &amp; How to Write it?](https://blog.bit.ai/technical-report/)
 
-##### rust
+#### latex
 
-[concurrency](https://blog.rust-lang.org/2015/04/10/Fearless-Concurrency.html)
+##### glossaries & acronyms
 
+[how to make Glossaries/Acronyms in LaTeX](https://www.resurchify.com/latex_tutorial/latex_glossaries.php)
+
+[Glossaries / Acronyms | Overleaf](https://www.overleaf.com/learn/latex/Glossaries)
+
+[List of glossaries not displaying](https://tex.stackexchange.com/questions/192378/list-of-glossaries-not-displaying)
 
 ## Notes
 
@@ -38,12 +39,10 @@ Below is the list of the best known algos.
 * [ ] Scrypt
 * [ ] DBft
 
+## commands
 
+### latex command
 
-## TODOs
+`makeglossaries main` - build acronyms and glossary entries
 
-#### intro
-
-* [ ] what is a consensus algoritm role, what is it used for. Recall the importance of Bitcoin Proof-of-work, the need for "better" versions, the trade-offs that usualy need to be made...
-* [ ] Recall the different types of blockchain, the usual chain and the other forms it can have.
-* [ ] Shows the impact the type of blockchain and the problem it rises on consensus.
+`pdflatex main.tex` - build pdf from main latex file.

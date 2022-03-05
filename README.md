@@ -10,7 +10,7 @@
 
 ##### technical report (TR)
 
-[TR: What is it &amp; How to Write it?](https://blog.bit.ai/technical-report/)
+[TR: What is it &amp; How to Write it?](https://blog.bit.ai/technical-report/) ⭐️
 
 #### latex
 
@@ -42,6 +42,8 @@ Below is the list of the best known algos.
 ## commands
 
 ### latex command
+
+`biber main` - build bibliography entries
 
 `makeglossaries main` - build acronyms and glossary entries
 

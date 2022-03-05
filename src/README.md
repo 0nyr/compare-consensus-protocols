@@ -8,12 +8,11 @@
 
 [echo server in rust](https://riptutorial.com/rust/example/4404/a-simple-tcp-client-and-server-application--echo)
 
-
 > Make a minimal blockchain node enabling PoW
 
 The node has to:
 
-* connetc to other nodes
+* connect to other nodes
 * check for PoW success from other nodes
 * calculate hash and try to solve the PoW
 * if PoW success, write its name to the blockchain

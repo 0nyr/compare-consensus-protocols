@@ -16,3 +16,20 @@ The node has to:
 * check for PoW success from other nodes
 * calculate hash and try to solve the PoW
 * if PoW success, write its name to the blockchain
+
+
+Node
+
+-> Try to connect to other node by sending TCP handshake to every thing available (localhost), hoping for a response.
+
+-> If no response, the node consider it is a *genesis* node, then start building the blockchain by building a *genesis* block.
+
+
+Questions
+
+How do a node nows a public key of an address ?
+
+
+## Notes
+
+Don't hash the transactions. Just store addresses as strings.

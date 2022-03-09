@@ -48,3 +48,9 @@ Below is the list of the best known algos.
 `makeglossaries main` - build acronyms and glossary entries
 
 `pdflatex main.tex` - build pdf from main latex file.
+
+## VSCode
+
+##### unable to get `rls`
+
+VScode has problem with rust `nightly`. Read [this | GitHub issue](https://github.com/rust-lang/vscode-rust/issues/237#issuecomment-359639894). The fix is rather simple, just set `"rust-client.channel": "stable"` in VS Code user settings.

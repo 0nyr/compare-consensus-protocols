@@ -1,0 +1,14 @@
+[package]
+name = "blockchain_node"
+version = "0.1.0"
+authors = ["onyr <rascoussier.florian@gmail.com>"]
+edition = "2018"
+publish = false
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+ansi_term = "0.12"  # required for colored output
+rouille = "3.5"     # required for web server
+chrono = "0.4"      # required for time management
+serde = "1.0"       # required for serialization

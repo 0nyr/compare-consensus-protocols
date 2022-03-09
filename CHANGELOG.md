@@ -30,3 +30,33 @@ Started to code a blockchain node from scratch. I'm still having many questions 
 * [ ] scanning ports
 * [ ] establishing inter-node connection.
 * [ ] Trying the node alone first.
+
+### Wed 9 March 2022
+
+Trying to continue to build the node.
+
+Having issues with VSCode code intellisense.
+
+```shell
+> Executing task: rustup component add rust-analysis --toolchain nightly-x86_64-unknown-linux-gnu <
+
+info: component 'rust-analysis' for target 'x86_64-unknown-linux-gnu' is up to date
+
+Terminal will be reused by tasks, press any key to close it.
+
+> Executing task: rustup component add rust-src --toolchain nightly-x86_64-unknown-linux-gnu <
+
+info: component 'rust-src' is up to date
+
+Terminal will be reused by tasks, press any key to close it.
+
+> Executing task: rustup component add rls --toolchain nightly-x86_64-unknown-linux-gnu <
+
+error: component 'rls' for target 'x86_64-unknown-linux-gnu' is unavailable for download for channel 'nightly'
+Sometimes not all components are available in any given nightly. If you don't need the component, you can remove it with:
+
+    rustup component remove --toolchain nightly --target x86_64-unknown-linux-gnu rls
+The terminal process "/usr/bin/bash '-c', 'rustup component add rls --toolchain nightly-x86_64-unknown-linux-gnu'" terminated with exit code: 1.
+
+Terminal will be reused by tasks, press any key to close it.
+```

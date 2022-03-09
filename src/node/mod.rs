@@ -5,24 +5,16 @@ use std::io::{Read, Write};
 use crate::blockchain::{Block, Blockchain};
 
 pub struct Node {
-    pub chain: Blockchain,
+    pub blockchain: Blockchain,
     pub current_transactions: Vec<Transaction>,
     pub nodes: Vec<String>,
 }
 
-imp Node {
-    pub fn new(
-        chain: Blockchain, 
-        current_transactions: Vec<Transaction>, 
-        nodes: Vec<String>
-    ) -> Node {
-        let mut node = Node {
-            chain: chain,
-            current_transactions: current_transactions,
-            nodes: nodes,
-        };
-        node.chain = new Blockchain();
-        node.chain 
+impl Node {
+    pub fn new() -> Node {
+        let mut node = Node {};
+        node.blockchain = new Blockchain();
+        node 
     }
 
     fn handle_client(mut stream: TcpStream) {

@@ -10,4 +10,4 @@ pub struct Blockchain {
     pub nodes: Vec<String>,
 }
 
-// TODO - imp Blockchain and genesis 
+// TODO - imp Blockchain

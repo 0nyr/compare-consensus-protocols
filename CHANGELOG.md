@@ -33,6 +33,10 @@ Started to code a blockchain node from scratch. I'm still having many questions 
 
 ### Wed 9 March 2022
 
+Added more code to the simple blockchain project in Rust.
+
+##### VSCode intellisense not working
+
 Trying to continue to build the node.
 
 Having issues with VSCode code intellisense.
@@ -60,3 +64,11 @@ The terminal process "/usr/bin/bash '-c', 'rustup component add rls --toolchain 
 
 Terminal will be reused by tasks, press any key to close it.
 ```
+
+Problem fixed thanks to [this | Reddit](https://www.reddit.com/r/rust/comments/7umj04/nightly_or_stable_you_may_have_no_choice/), and [this | GitHub issue](https://github.com/rust-lang/vscode-rust/issues/237#issuecomment-359639894) ⭐️.
+
+### Thu 10 March 2022
+
+Trying to understand Rust scopes, borrowing and concurrency. This is very mandatory to be able to build the node, since we need to have several threads for the web client and the miner, in order to get transactions, add them to the block, mine the block through PoW then sending it to the peers.
+
+* [ ] Read [this guide on concurrency in Rust](https://blog.rust-lang.org/2015/04/10/Fearless-Concurrency.html).

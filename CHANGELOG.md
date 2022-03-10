@@ -71,4 +71,21 @@ Problem fixed thanks to [this | Reddit](https://www.reddit.com/r/rust/comments/7
 
 Trying to understand Rust scopes, borrowing and concurrency. This is very mandatory to be able to build the node, since we need to have several threads for the web client and the miner, in order to get transactions, add them to the block, mine the block through PoW then sending it to the peers.
 
-* [ ] Read [this guide on concurrency in Rust](https://blog.rust-lang.org/2015/04/10/Fearless-Concurrency.html).
+* [X] Read [this guide on concurrency in Rust](https://blog.rust-lang.org/2015/04/10/Fearless-Concurrency.html).
+* [ ] Read [this blog post of Rust scoping system](https://blog.skylight.io/rust-means-never-having-to-close-a-socket/).
+* [X] Make a simple example of concurrency in Rust.
+
+I made a simple program that define a `struct` with a vector and a counter. The idea is to have several threads trying concurrently to update the counter after some random computations, much similar to what happens in Proof of Work when several nodes try to update the same data structure (blockchain) after some random problem solving.
+
+The program make great use of `scope` in Rust, as well as 2 crucial components of the STD: `std::Mutex` for protecting data updates between threads using a lock, and `std::sync::Arc` to provide thread-safe smart pointer
+
+```shell
+(base) onyr@aezyr:~/Documents/code/rust/concurrency/concurrent_vect_use$ cargo run
+    Finished dev [unoptimized + debuginfo] target(s) in 0.00s
+     Running `target/debug/concurrent_vect_use`
+Launching the program...
+initial counter: Counter { last_value: 100, updating_threads: [] }
+Counter { last_value: 400, updating_threads: [0, 0, 0, 0, 1, 1, 1, 2, 0, 2, 1, 2, 2, 1, 2, 0, 1, 2, 0, 0, 2, 1, 2, 1, 2, 2, 0, 0, 1, 1] }
+```
+
+It took me several hours to read the docs and understand how to deal with concurrency in Rust. However, once the compiler is kind enough to accept the code, things just works. This is an important step in building a basic blockchain node.

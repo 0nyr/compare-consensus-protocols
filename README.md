@@ -22,13 +22,18 @@
 
 [List of glossaries not displaying](https://tex.stackexchange.com/questions/192378/list-of-glossaries-not-displaying)
 
+### presentation
+
+[Presentation on Canva](https://www.canva.com/design/DAFC139vlco/JKfnzCtc0PL6PJiq1qAWUw/view?utm_content=DAFC139vlco&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
+
 ## Notes
 
 Below is the list of the best known algos.
 
-* [ ] PoW
-* [ ] PoS
-* [ ] DAG
+* [X] PoW
+* [X] PoS
+* [X] PoSpace & PoCapacity
+* [X] PoET
 * [ ] DPoS
 * [ ] DPoR
 * [ ] Hybrid PoW + PoS
